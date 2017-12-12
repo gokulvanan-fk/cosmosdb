@@ -6,6 +6,6 @@ import com.microsoft.azure.documentdb.Document;
 
 public interface ChangeFeedConsumer {
 
-	boolean consumer(List<Document> docs);
+	boolean consume(List<Document> docs);
 	
 }

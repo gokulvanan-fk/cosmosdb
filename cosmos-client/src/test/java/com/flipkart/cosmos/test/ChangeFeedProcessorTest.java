@@ -40,7 +40,7 @@ public class ChangeFeedProcessorTest {
 				new ChangeFeedConsumer() {
 
 			@Override
-			public boolean consumer(List<Document> docs) {
+			public boolean consume(List<Document> docs) {
 				System.out.println("In consumer");
 				System.out.println(docs);
 				return true;

@@ -124,7 +124,7 @@ public class ChangeFeedProcessorImpl implements ChangeFeedProcessor{
 						docs.add(doc);
 					}
 					try{
-						consumer.consumer(docs);
+						consumer.consume(docs);
 						offsetStore.store(id, changeFeedResponse.getResponseContinuation());
 					}catch(Exception e){
 						logger.error("Failed Change Feed processing ",e);
