@@ -11,7 +11,12 @@
 .mtj.tmp/
 
 # Package Files #
+*.project
+*.classpath
+*.DS_Store*
 *.jar
+*.settings
+*/bin*
 *.war
 *.ear
 *.zip
